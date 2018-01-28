@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Bowl</title>
+
+ <!--    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ -->
+    <!-- Optional theme -->
+ <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+<!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    
+
+  </head>
+
+  <body >
+<!-- MAIN CONTAINER-->
+<div class="container">
+  <!-- JUMBOTRON -->
+ <!--  <div class="jumbotron"><br><br><br><br>
+  </div> -->
+  <!-- JUMBOTRON END-->
+  <div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <!-- FORM -->
+    <form id="contact-form" action="/bet" method="POST">
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" class="form-control input" id="first-name"  name="firstName">
+      </div>
+       <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" class="form-control input" id="last-name"  name="lastName">
+      </div>
+
+      <div class="form-group">
+        <div><label>How long will the National Anthem be</label></div>
+        <input id="q1" type="checkbox" value="Over" name="q1">Over
+        <input id="q1" type="checkbox" value="Under" name="q1" class="checkbox-2-moveright">Under
+      </div>
+
+<!-- 
+      <div class="form-group">
+        <label for="q1">How long will the National Anthem be</label>
+        <select class="form-control" id="q1" name="q1">
+          <option selected="true" disabled="disabled"></option> 
+          <option>Over</option>
+          <option>Under</option>
+        </select>
+      </div> -->
+      
+      <div class="form-group">
+        <label for="q2">Who will host the first Super Bowl commercial -- (after kickoff)</label>
+        <input type="text" class="form-control input" id="q2" name="q2">
+      </div>
+
+      <div class="form-group">
+        <div><label>What will be the coin toss</label></div>
+        <input id="q3" type="checkbox" value="Heads" name="q3">Heads
+        <input id="q3" type="checkbox" value="Tails" name="q3" class="checkbox-2-moveright">Tails
+      </div>
+
+    <!--   <div class="form-group">
+        <label for="q3">What will be the coin toss</label>
+        <select class="form-control" id="q3" name="q3">
+          <option selected="true" disabled="disabled"></option> 
+          <option>Heads</option>
+          <option>Tails</option>
+        </select>
+      </div> -->
+
+       <div class="form-group">
+        <div><label>Who will be the first team that scores</label></div>
+        <input id="q4" type="checkbox" value="Patriots" name="q4">Patriots
+        <input id="q4" type="checkbox" value="Eagles" name="q4" class="checkbox-2-moveright">Eagles
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="q4">Who will be the first team that scores</label>
+        <select class="form-control" id="q4" name="q4">
+           <option selected="true" disabled="disabled"></option> 
+          <option>Patriots</option>
+          <option>Eagles</option>
+        </select>
+      </div> -->
+      <div class="form-group">
+        <label for="q5">What will be the first score</label>
+        <select class="form-control" id="q5" name="q5">
+          <option selected="true" disabled="disabled"></option> 
+          <option>touchdown</option>
+          <option>field goal</option>
+          <option>safety</option>
+          <option>touchdown from a fumble</option>
+          <option>touchdown from an interception</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <div><label>How many times will the announcers bring up Trump's name? (Over / Under 1.5)</label></div>
+        <input id="q6" type="checkbox" value="Over" name="q6">Over
+        <input id="q6" type="checkbox" value="Under" name="q6" class="checkbox-2-moveright">Under
+      </div>
+<!-- 
+
+      <div class="form-group">
+        <label for="q6">How many times will the announcers bring up Trump's name? (Over / Under 1.5)</label>
+        <select class="form-control" id="q6" name="q6">
+          <option selected="true" disabled="disabled"></option> 
+          <option>Over</option>
+          <option>Under</option>
+        </select>
+      </div> -->
+     <div class="form-group">
+      <div id="error-message"></div><br>
+      <div id="inline"><button type="submit" class="btn btn-primary">Submit</button></div>
+    </div>
+   </form><!-- form end -->
+  </div>   <!--col-8 -->
+  <div class="col-md-2"></div> 
+</div> <!-- ROW END -->
+</div><!-- MAIN CONTAINER END -->
+
+
+
+  <script src="java/form.js"></script>
+  <!-- <script src="java/'''''.js"></script> -->
+
+  <script>
+// var images = ["http://www.iwallpaper.org/download/philadelphia-eagles-wallpaper-1080.jpg","https://hdwallsource.com/img/2016/7/new-england-patriots-logo-desktop-wallpaper-55964-57713-hd-wallpapers.jpg"]
+
+var images=["https://media.giphy.com/media/26xBuHPjE8IDdZTxu/giphy.gif","https://media.giphy.com/media/V9ESm8JUmsaJO/giphy.gif"]
+
+$("body").css("background","url('https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Super_Bowl_logo.svg/843px-Super_Bowl_logo.svg.png') no-repeat center center fixed");
+
+$("body").css("background-size"," 100% 100%");
+
+
+var i = 0;
+setInterval(function() {
+      $("body").css("background","url("+images[i]+") no-repeat center center fixed");
+      $("body").css("background-size","100% 100%");
+      $("body").css("opacity",".8")
+      i = i + 1;
+      if (i == images.length) {
+        i =  0;
+      }
+}, 6000);
+
+  </script>
+  </body>
+</html>
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Super Bowl</title>
+
+ <!--    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ -->
+    <!-- Optional theme -->
+ <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    <!-- Latest compiled and minified JavaScript -->
+<!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+
+
+ <!--  <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+    
+
+  </head>
+
+  <body>
+<!-- MAIN CONTAINER-->
+<div class="container">
+  <!-- JUMBOTRON -->
+  <div class="jumbotron">
+    <h1>Bootstrap Tutorial</h1>      
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+  </div>
+  <!-- JUMBOTRON END-->
+  <div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <!-- FORM -->
+    <form id="contact-form" action="/answer" method="POST">
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" class="form-control" id="first-name"  name="firstName">
+      </div>
+       <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" class="form-control" id="last-name"  name="lastName">
+<!--   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+      </div>
+
+      <div class="form-group">
+        <label for="q1">How long will the National Anthem be</label>
+        <select class="form-control" id="q1" name="q1">
+          <option>Over</option>
+          <option>Under</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="q2">Who will host the first Super Bowl commercial -- (after kickoff)</label>
+        <input type="text" class="form-control" id="q2" name="q2">
+      </div>
+
+      <div class="form-group">
+        <label for="q3">What will be the coin toss</label>
+        <select class="form-control" id="q3" name="q3">
+          <option>Heads</option>
+          <option>Tails</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q4">Who will be the first team that scores</label>
+        <select class="form-control" id="q4" name="q4">
+          <option>Patriots</option>
+          <option>Eagles</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q5">What will be the first score</label>
+        <select class="form-control" id="q5" name="q5">
+          <option>touchdown</option>
+          <option>field goal</option>
+          <option>safety</option>
+          <option>touchdown from a fumble</option>
+          <option>touchdown from an interception</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q6">How many times will the announcers bring up Trump's name? (Over / Under 1.5)</label>
+        <select class="form-control" id="q6" name="q6">
+          <option>Over</option>
+          <option>Under</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form><!-- form end -->
+  </div>   <!--col-8 -->
+  <div class="col-md-2"></div> 
+</div> <!-- ROW END -->
+
+
+
+
+
+
+</div><!-- MAIN CONTAINER END -->
+
+
+
+  <script src="java/form.js"></script>
+  <!-- <script src="java/'''''.js"></script> -->
+  </body>
+</html>
+
